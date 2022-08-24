@@ -187,6 +187,11 @@ header {
   margin-bottom: 94px;
 }
 
+.benefits {
+  display: flex;
+  gap: 30px;
+}
+
 .benefits-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -207,14 +212,24 @@ header {
   margin-bottom: 94px;
 }
 
+.section-projects .projects {
+  display: flex;
+  gap: 30px;
+}
 /* Our team */
 
 .section-team {
+  padding: 94px 215px;
   background-color: var(--light-grey-color);
 }
 
 .section-team img {
   margin-bottom: 30px;
+}
+
+.team {
+  display: flex;
+  gap: 30px;
 }
 
 .team-title {
