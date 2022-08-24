@@ -68,6 +68,10 @@ img {
 
 /* Header */
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -179,7 +183,12 @@ img {
 
 /* Company benefits */
 
+.section-benefits {
+  margin-bottom: 94px;
+}
+
 .benefits-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -194,13 +203,22 @@ img {
 
 /* What do we do */
 
+.section-projects {
+  margin-bottom: 94px;
+}
+
 /* Our team */
 
 .section-team {
   background-color: var(--light-grey-color);
 }
 
+.section-team img {
+  margin-bottom: 30px;
+}
+
 .team-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
