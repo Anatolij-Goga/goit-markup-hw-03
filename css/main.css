@@ -170,6 +170,7 @@ img {
 /* Sections */
 
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
