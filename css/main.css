@@ -188,7 +188,6 @@ img {
 /* Button */
 
 .button {
-  border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
 
@@ -200,6 +199,9 @@ img {
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  border: transparent;
+  border-radius: 4px;
 }
 
 /* Sections */
@@ -313,6 +315,11 @@ address {
 }
 
 /* Portfolio */
+
+.filter {
+  display: flex;
+  gap: 8px;
+}
 
 .projects .button:hover,
 .projects .button:focus {
