@@ -130,6 +130,7 @@ img {
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -316,9 +317,19 @@ address {
 
 /* Portfolio */
 
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .filter {
   display: flex;
   gap: 8px;
+  margin-bottom: 34px;
+}
+
+.projects {
+  display: flex;
 }
 
 .projects .button:hover,
