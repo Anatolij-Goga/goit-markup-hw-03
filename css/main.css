@@ -105,6 +105,7 @@ img {
 
 .site-nav .list {
   display: block;
+
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -217,7 +218,8 @@ img {
 
 .section-benefits,
 .section-projects,
-.section-team {
+.section-team,
+.section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -317,28 +319,34 @@ address {
 
 /* Portfolio */
 
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .filter {
   display: flex;
   gap: 8px;
   margin-bottom: 34px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .projects {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.projects .button:hover,
-.projects .button:focus {
+.section-portfolio .img {
+  margin-bottom: 20px;
+}
+
+.filter .button:hover,
+.filter .button:focus {
   color: var(--light-white-color);
   background-color: var(--accent-bg-color);
 }
 
 .projects-title {
+  margin-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -346,6 +354,9 @@ address {
 }
 
 .projects-item {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--secondary-txt-color);
