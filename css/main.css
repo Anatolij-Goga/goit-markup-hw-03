@@ -24,12 +24,12 @@
 }
 
 body {
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
   font-family: var(--main-font);
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
-  color: var(--main-txt-color);
-  background-color: var(--main-bg-color);
 }
 
 .container {
@@ -68,16 +68,20 @@ img {
 
 /* Header */
 
-header {
+.header-container {
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #ececec;
 }
 
 .logo {
+  margin-right: 93px;
+
+  color: var(--logo-color);
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  color: var(--logo-color);
   text-decoration: none;
 }
 
@@ -87,7 +91,20 @@ header {
 
 /* Site Nav */
 
+.header-nav {
+  margin-right: auto;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .site-nav .list {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -109,7 +126,16 @@ header {
 
 /* Contacts*/
 
+.header .contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .contacts .list {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -128,30 +154,35 @@ header {
 /* Hero */
 
 .hero {
-  margin-bottom: 94px;
-  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--secondary-bg-color);
 }
 
 .hero-title {
   margin-bottom: 30px;
+
+  color: var(--light-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
-  color: var(--light-white-color);
 }
 
 .hero .button {
+  display: block;
+  margin: 0 auto;
   padding: 10px 32px;
+
+  color: var(--light-white-color);
+  background-color: var(--accent-bg-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  color: var(--light-white-color);
-  background-color: var(--accent-bg-color);
 }
 
 /* Button */
@@ -160,15 +191,15 @@ header {
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
+
+  color: var(--main-txt-color);
+  background-color: var(--light-grey-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
-  color: var(--main-txt-color);
-  background-color: var(--light-grey-color);
   cursor: pointer;
-  text-align: center;
 }
 
 /* Sections */
@@ -181,11 +212,13 @@ header {
   text-align: center;
 }
 
-/* Company benefits */
-
-.section-benefits {
-  margin-bottom: 94px;
+.section-benefits,
+.section-projects,
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+/* Company benefits */
 
 .benefits {
   display: flex;
@@ -208,10 +241,6 @@ header {
 
 /* What do we do */
 
-.section-projects {
-  margin-bottom: 94px;
-}
-
 .section-projects .projects {
   display: flex;
   gap: 30px;
@@ -219,15 +248,12 @@ header {
 /* Our team */
 
 .section-team {
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--light-grey-color);
 }
 
-.section-team img {
-  margin-bottom: 30px;
-}
-
-.team {
+.section-team .team {
   display: flex;
   gap: 30px;
 }
@@ -253,7 +279,15 @@ header {
   background-color: var(--footer-bg-color);
 }
 
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer .logo {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
   color: var(--light-white-color);
 }
 
@@ -262,15 +296,22 @@ address {
 }
 
 .address {
+  margin-bottom: 9px;
+
+  color: var(--light-white-color);
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
-  color: var(--light-white-color);
+}
+
+.footer-container .list:first-child {
+  margin-bottom: 9px;
 }
 
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
 }
+
 /* Portfolio */
 
 .projects .button:hover,
