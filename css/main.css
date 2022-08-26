@@ -53,6 +53,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -71,6 +73,9 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+}
+
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -99,8 +104,6 @@ img {
   display: flex;
   align-items: center;
   gap: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav .list {
@@ -113,6 +116,8 @@ img {
 }
 
 .site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--main-txt-color);
 }
 
@@ -145,6 +150,8 @@ img {
 }
 
 .contacts .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--secondary-txt-color);
 }
 
@@ -216,6 +223,19 @@ img {
   text-align: center;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .section-benefits,
 .section-projects,
 .section-team,
@@ -223,11 +243,13 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /* Company benefits */
 
-.benefits {
+.benefits-container .benefits {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 .benefits-title {
@@ -246,10 +268,11 @@ img {
 
 /* What do we do */
 
-.section-projects .projects {
+.section-projects .list {
   display: flex;
   gap: 30px;
 }
+
 /* Our team */
 
 .section-team {
@@ -261,6 +284,11 @@ img {
 .section-team .team {
   display: flex;
   gap: 30px;
+}
+
+.team-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -313,28 +341,23 @@ address {
   margin-bottom: 9px;
 }
 
+.footer-container .link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
 }
 
 /* Portfolio */
 
-.filter {
+.portfolio-container .filter {
   display: flex;
   gap: 8px;
   margin-bottom: 34px;
   justify-content: center;
   align-items: flex-start;
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.section-portfolio .img {
-  margin-bottom: 20px;
 }
 
 .filter .button:hover,
@@ -343,10 +366,27 @@ address {
   background-color: var(--accent-bg-color);
 }
 
+.portfolio-container .projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-container .projects-container {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.projects-container {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
 .projects-title {
   margin-bottom: 4px;
-  padding-right: 24px;
-  padding-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -354,9 +394,6 @@ address {
 }
 
 .projects-item {
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--secondary-txt-color);
