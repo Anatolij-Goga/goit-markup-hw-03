@@ -77,6 +77,8 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -136,9 +138,6 @@ img {
   display: flex;
   align-items: center;
   gap: 50px;
-  margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .contacts .list {
@@ -169,7 +168,7 @@ img {
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  width: 696px;
 
   color: var(--light-white-color);
   font-weight: 900;
@@ -178,6 +177,9 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero .button {
@@ -237,7 +239,6 @@ img {
 }
 
 .section-benefits,
-.section-projects,
 .section-team,
 .section-portfolio {
   padding-top: 94px;
@@ -267,6 +268,10 @@ img {
 }
 
 /* What do we do */
+
+.section-projects {
+  padding-bottom: 94px;
+}
 
 .section-projects .list {
   display: flex;
@@ -309,12 +314,9 @@ img {
 /* Footer */
 
 .footer {
-  background-color: var(--footer-bg-color);
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--footer-bg-color);
 }
 
 .footer .logo {
