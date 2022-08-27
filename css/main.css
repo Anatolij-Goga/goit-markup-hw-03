@@ -253,6 +253,10 @@ img {
   justify-content: center;
 }
 
+.benefits .list {
+  width: 270px;
+}
+
 .benefits-title {
   margin-bottom: 10px;
   font-weight: 700;
